@@ -1,4 +1,4 @@
-<html lang="en-us"><script src="https://pygame-web.github.io/archives/0.9/pythons.js" type=module id=site data-LINES=57 data-CONSOLE=25 data-python=python3.12 data-os=vtx,fs,snd,gui async defer>#<!--
+<html lang="en-us"><script src="https://pygame-web.github.io/archives/0.9/pythons.js" type=module id=site data-LINES=57 data-CONSOLE=25 data-python=python3.12 data-os=vtx,fs,snd,gui data-pythonrc="pythonrc.py" async defer>#<!--
 
 print("""
 Loading shitclash from shitclash.apk
@@ -141,7 +141,7 @@ async def custom_site():
     while embed.counter()<0:
         await asyncio.sleep(.1)
 
-    main = appdir / "assets" / "main.py"
+    main = appdir / "assets" / "web_main.py"
 
     # start async top level machinery and add a console.
     await TopLevel_async_handler.start_toplevel(platform.shell, console=window.python.config.debug)
